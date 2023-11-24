@@ -7,7 +7,7 @@ Just send the GET-request to the ```/stream``` endpoint.
 ### Run
 ```go run main.go```
 
-Or with docker:
+Or via docker:
 
-```docker build -t wStream-app -f infra/Dockerfile .```<br />
-```docker run -dp 127.0.0.1:8080:8080 wStream-app```
+```docker build -t wstream-app -f infra/Dockerfile .```<br />
+```docker run -dp 127.0.0.1:8080:8080 wstream-app```

@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wStream-app
+  name: wstream-app
 spec:
   replicas: 10
   selector:
     matchLabels:
-      app: wStream-app
+      app: wstream-app
   template:
     metadata:
       labels:
-        app: wStream-app
+        app: wstream-app
     spec:
       containers:
-        - name: wStream-app
-          image: nomilkinmyhome/wStream-app:latest
+        - name: wstream-app
+          image: nomilkinmyhome/wstream-app:latest
           ports:
             - containerPort: 8080
